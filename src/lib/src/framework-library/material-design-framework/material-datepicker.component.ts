@@ -30,7 +30,7 @@ import { JsonSchemaFormService } from '../../json-schema-form.service';
         align="end">{{options?.description}}</md-hint>
       <md-hint *ngIf="!options?.description && options?.placeholder && !formControl?.dirty"
         align="end">{{options?.placeholder}}</md-hint>
-      <button mdSuffix [mdDatepickerToggle]="picker"></button>
+      <button mdSuffix></button>
     </md-input-container>
     <md-datepicker #picker
       (selectedChanged)="updateSelectedDate($event)"></md-datepicker>`,
